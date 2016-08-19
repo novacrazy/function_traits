@@ -43,7 +43,7 @@ All of these are within the namespace `fn_traits`.
 Integer value representing the number of parameters in the given Functor
  
 #### `function_traits<Functor>::result_type`
-
+##### alias: `function_traits<Functor>::return_type`
 The return/result type of the Functor
  
 #### `function_traits<Functor>::function_type`
