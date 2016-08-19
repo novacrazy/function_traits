@@ -21,6 +21,8 @@ namespace fn_traits {
     struct function_traits<R( Args... )> {
         typedef R result_type;
 
+        typedef result_type return_type;
+
         typedef result_type function_type( Args... );
 
         enum {
