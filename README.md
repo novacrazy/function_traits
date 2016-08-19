@@ -1,7 +1,7 @@
 function_traits
 ===============
 
-Example:
+### Example:
 
 ```C++
 
@@ -33,3 +33,27 @@ int main() {
 }
 
 ```
+
+### API
+
+All of these are within the namespace `fn_traits`.
+
+#### `function_traits<Functor>::arity`
+
+Integer value representing the number of parameters in the given Functor
+ 
+#### `function_traits<Functor>::result_type`
+
+The return/result type of the Functor
+ 
+#### `function_traits<Functor>::function_type`
+
+A simplified version of Functor
+
+#### `function_traits<Functor>::template arg<N>::type`
+
+Access the type of argument `N`
+
+#### `function_traits<Functor>::tuple_type`
+
+Shortcut for `std::tuple<Args...>` where `Args...` are the arguments of the Functor given.
