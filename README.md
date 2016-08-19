@@ -36,6 +36,8 @@ int main() {
 
 ### API
 
+#### [Click here for Doxygen generated documentation](https://novacrazy.github.io/function_traits/html/index.html)
+
 All of these are within the namespace `fn_traits`.
 
 #### `function_traits<Functor>::arity`
