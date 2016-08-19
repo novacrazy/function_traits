@@ -12,6 +12,7 @@ Example:
 #include <function_traits.hpp>
 
 using namespace std;
+using namespace fn_traits;
 
 int myFunction( int, float ) {
 
