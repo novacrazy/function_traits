@@ -20,5 +20,6 @@ var searchData=
   ['function_5ftraits_3c_20t_20_3e',['function_traits&lt; T &gt;',['../d8/ddb/structfn__traits_1_1function__traits.html',1,'fn_traits']]],
   ['function_5ftraits_3c_20volatile_20t_20_26_20_3e',['function_traits&lt; volatile T &amp; &gt;',['../d0/dc4/structfn__traits_1_1function__traits_3_01volatile_01_t_01_6_01_4.html',1,'fn_traits']]],
   ['function_5ftraits_3c_20volatile_20t_20_26_26_20_3e',['function_traits&lt; volatile T &amp;&amp; &gt;',['../d1/ddf/structfn__traits_1_1function__traits_3_01volatile_01_t_01_6_6_01_4.html',1,'fn_traits']]],
-  ['function_5ftype',['function_type',['../d7/d49/structfn__traits_1_1function__traits_3_01_r_07_args_8_8_8_08_4.html#a85e5883a1c8050fe442c1072386b2d11',1,'fn_traits::function_traits&lt; R(Args...)&gt;']]]
+  ['function_5ftype',['function_type',['../d7/d49/structfn__traits_1_1function__traits_3_01_r_07_args_8_8_8_08_4.html#a85e5883a1c8050fe442c1072386b2d11',1,'fn_traits::function_traits&lt; R(Args...)&gt;']]],
+  ['function_5ftraits',['function_traits',['../index.html',1,'']]]
 ];

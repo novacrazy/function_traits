@@ -1,0 +1,61 @@
+\subsubsection*{Example\+:}
+
+
+\begin{DoxyCode}
+1 \{C++\}
+2 
+3 #include <type\_traits>
+4 #include <iostream>
+5 #include <iomanip>
+6 
+7 #include <function\_traits.hpp>
+8 
+9 using namespace std;
+10 using namespace fn\_traits;
+11 
+12 int myFunction( int, float ) \{
+13 
+14 \}
+15 
+16 int main() \{
+17     typedef function\_traits<decltype( myFunction )> traits;
+18 
+19     cout << boolalpha << is\_same<int, typename traits::template arg<0>::type>::value << endl; //true
+20 
+21     auto cb = []() -> double \{
+22         return 10.0;
+23     \};
+24 
+25     cout << boolalpha << is\_same<double, typename function\_traits<decltype( cb )>::result\_type>::value <<
+       endl; //true
+26 
+27     return 0;
+28 \}
+\end{DoxyCode}
+
+
+\subsubsection*{A\+PI}
+
+All of these are within the namespace {\ttfamily \hyperlink{namespacefn__traits}{fn\+\_\+traits}}.
+
+\paragraph*{{\ttfamily function\+\_\+traits$<$Functor$>$\+::arity}}
+
+Integer value representing the number of parameters in the given Functor
+
+\paragraph*{{\ttfamily function\+\_\+traits$<$Functor$>$\+::result\+\_\+type}}
+
+\subparagraph*{alias\+: {\ttfamily function\+\_\+traits$<$Functor$>$\+::return\+\_\+type}}
+
+The return/result type of the Functor
+
+\paragraph*{{\ttfamily function\+\_\+traits$<$Functor$>$\+::function\+\_\+type}}
+
+A simplified version of Functor
+
+\paragraph*{{\ttfamily function\+\_\+traits$<$Functor$>$\+::template arg$<$N$>$\+::type}}
+
+Access the type of argument {\ttfamily N}
+
+\paragraph*{{\ttfamily function\+\_\+traits$<$Functor$>$\+::tuple\+\_\+type}}
+
+Shortcut for {\ttfamily std\+::tuple$<$Args...$>$} where {\ttfamily Args...} are the arguments of the Functor given. 
