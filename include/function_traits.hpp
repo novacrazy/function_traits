@@ -14,7 +14,7 @@
 namespace fn_traits {
     template <typename Functor>
     struct function_traits
-        : public function_traits<decltype( Functor::operator())> {
+        : public function_traits<decltype( &Functor::operator())> {
     };
 
     template <typename R, typename... Args>
